@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main class="flex justify-center">
+        <div class="mockup-phone">
+            <div class="camera"></div>
+            <div class="display">
+              <div class="artboard artboard-demo phone-3">
+                <div>
+                    <div class="stats shadow">
+                        <div class="stat">
+                          <div class="stat-value" id="previous-money">5000</div>
+                          <div class="stat-desc text-center">Amount</div>
+                        </div>
+                      </div>
+                </div>
+                <div class="divider"></div>
+                <div>
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg" id="add-main">Add Money</button>
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg" id="cash-btn">Cash Out</button>
+                </div>
+                <div class="divider"></div>
+                <div>
+                    <div class="card  bg-red-400 w-full max-w-sm shrink-0 shadow-2xl" id="add-section">
+                        <form class="card-body">
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Amount</span>
+                            </label>
+                            <input type="text" placeholder="Enter Add Amount" id="amount-input" class="input input-bordered" required autocomplete="off" />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Pin</span>
+                            </label>
+                            <input type="password" placeholder="Enter Pin" id="pin-input" class="input input-bordered" required autocomplete="off" />
+                            
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="add-btn" class="btn btn-primary">Add Money</button>
+                          </div>
+                        </form>
+                      </div>
+                </div>
+                <div>
+                    <div class="card hidden bg-indigo-500 w-full max-w-sm shrink-0 shadow-2xl" id="cashOut-section">
+                        <form class="card-body">
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Amount</span>
+                            </label>
+                            <input type="text" placeholder="Enter Cash Out Amount" id="cashOut-input" class="input input-bordered" required autocomplete="off" />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Pin</span>
+                            </label>
+                            <input type="password" placeholder="Enter Pin" id="cashOut-pin" class="input input-bordered" required autocomplete="off" />
+                            
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="cashOut-btn" class="btn btn-primary">Cash Out</button>
+                          </div>
+                        </form>
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </main>
+    <script src="home.js"></script>
+    <script src="cashOut.js"></script>
+    <script src="feature.js"></script>
+</body>
+</html>
